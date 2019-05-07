@@ -17,7 +17,7 @@ Containerized Hamachi VPN
 
 ## 1.1. Purpose
 
-To create a means of launching a Hamachi VPN endpoint for hub / spoke configurations in a NAS or other environment that does not meet first-class support requirements for Hamachi on Linux but does have:
+To create a means of launching a Hamachi VPN client for hub / spoke configurations in a NAS or other environment that does not meet first-class support requirements for Hamachi on Linux but does have:
 
 * Support for tunnels
 * Support for Docker
@@ -52,9 +52,9 @@ Which brings us to...
 
 * Other NAS solutions? Potentially. I don't own anything other than my Synology swarm so I really couldn't tell you but the criteria are very straightforward. See above under Purpose.
 
-* Non-NAS Linux deployments? Sure, really no reason why not, provided you aren't running a deployment so stripped down it doesn't support the things you need to run a VPN endpoint. See above under Purpose.
+* Non-NAS Linux deployments? Sure, really no reason why not, provided you aren't running a deployment so stripped down it doesn't support the things you need to run a VPN client. See above under Purpose.
 
-* Mac / Windows? No idea. Mac? Maybe, if it works with /dev/net/tun, which off the top of my head I don't think it does, or it does in a weird way. Windows does networking in its own creative way so theoretically what you may end up with if you try it on Windows is a Hamachi endpoint into hyper-v... If anything. It would be fun to try though when WSL2 comes out and that whole thing happens.
+* Mac / Windows? No idea. Mac? Maybe, if it works with /dev/net/tun, which off the top of my head I don't think it does, or it does in a weird way. Windows does networking in its own creative way so theoretically what you may end up with if you try it on Windows is a Hamachi client into hyper-v... If anything. It would be fun to try though when WSL2 comes out and that whole thing happens.
 
 ## 1.6. Examples
 
@@ -82,4 +82,4 @@ Once you approve the request and add the now logged-in client to a network that'
 
 ### 1.6.1. A note on using 'privileged'
 
-It's a VPN endpoint. It needs privileged.
+It's a VPN client. It needs privileged.
